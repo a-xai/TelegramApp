@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="#252D3A">
+
+    <ImageView
+        android:id="@+id/item_user_avatar_img"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/style_avatar"
+        android:padding="8dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_user_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azamat GT-28"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/item_user_avatar_img"
+        app:layout_constraintTop_toTopOf="@id/item_user_avatar_img" />
+
+    <TextView
+        android:id="@+id/item_chat_last_massage_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Some text"
+        android:textColor="#ccc"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/item_user_name_txt"
+        app:layout_constraintTop_toBottomOf="@id/item_user_name_txt" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.835dp"
+        android:background="#8D0A0B0B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/item_chat_last_massage_txt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
